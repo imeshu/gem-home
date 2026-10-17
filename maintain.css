@@ -1,0 +1,161 @@
+.maintain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #062d1d;
+    font-family: Cormorant Garamond, serif;
+}
+
+.maintain h1 {
+    font-size: 2rem;
+    color: #c4985a;
+    text-align: center;
+
+}
+
+.logo {
+    height: auto;
+    margin-bottom: 1rem;
+   
+}
+
+.logo img {
+    margin-left: 10px;
+    width: 150px;
+    height: auto;
+    
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.maintain p {
+    font-size: 1rem;
+    color: #ebe4d7;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 1rem;
+    
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #062d1d;
+    height: 60px;
+    width: 250px;
+    border: 2px solid #c4985a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px ;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.whatsapp-link {
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.whatsapp-number {
+    font-size: 1.5rem;
+    color: #ebe4d7;
+    text-decoration: none;
+}
+
+.text {
+    font-size: 1rem;
+    color: #ebe4d7;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 1rem;
+}
+
+.text h2 {
+    font-size: 1.5rem;
+    color: #c4985a;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.whatsapp-button:hover {
+    background-color: #c4985a;
+    color: #062d1d;
+    animation: pulse 1s infinite;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .maintain {
+        padding: 20px;
+    }
+
+    .maintain h1 {
+        font-size: 1.5rem;
+    }
+
+    .maintain p {
+        font-size: 0.9rem;
+        max-width: 300px;
+    }
+
+    .whatsapp-button {
+
+        width: 200px;
+        height: 50px;
+    }
+
+    .whatsapp-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .whatsapp-number {
+        font-size: 1.2rem;
+    }
+
+    .contact {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .text {
+        padding-top: 50px;
+        font-size: 0.9rem;
+        max-width: 300px;
+    }
+}
